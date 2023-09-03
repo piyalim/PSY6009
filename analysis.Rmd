@@ -5,7 +5,9 @@ date: "`r Sys.Date()`"
 output: word_document
 ---
 
-```{r}
+##This first part is creating and cleaning the data. (You can run the entire 1st chunk)
+
+```{r echo=FALSE}
 #set working directory
 setwd("C:/Users/piyal/OneDrive/Desktop/R/dissertation")
 
@@ -18,7 +20,7 @@ library("lme4")
 library("AER")
 
 #loading trial dataset
-trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(
+trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(  
   participant = col_number(),
   age_of_caregiver = col_factor(),
   sex_of_child = col_factor(),
@@ -31,11 +33,15 @@ trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(
   IMD = col_integer()
 ))
 
+
+
+
 #loading dataset with individual ASQ responses
 asq_data <- read_csv("data/Piyali_data WITH CONDITION  - ASQ baseline.csv")
 
 
-#Preparing ASQ dataset
+
+#Renaming ASQ dataset
 asq_clean <- asq_data %>% 
   rename(participant = "P number",
          c_high_pitch = "Does your baby make high pitched squeals?",
@@ -71,6 +77,10 @@ asq_clean <- asq_data %>%
          persoc_foot_mouth = "While your baby is on his back, does he put his foot in his mouth?",
          persoc_toy = "Does your baby try to get a toy that is out of reach? (She may roll, pivot on her tummy or crawl to get it)")
 
+
+
+
+
 #scoring the ASQ subscales
 
 ## scoring communication items
@@ -92,11 +102,6 @@ asq_clean <- asq_clean %>%
   
   mutate(comm_item6 = ifelse(asq_clean$c_imitate == "Yes", 10, 
                         ifelse(asq_clean$c_imitate == "Sometimes", 5, 0)))
-
-###checking the scoring
-
-check_item1 <- asq_clean[ , c("c_high_pitch", "comm_item1")]
-head(check_item1)
 
 ### total communication score
 
@@ -123,11 +128,6 @@ asq_clean <- asq_clean %>%
   mutate(gmotor_item6 = ifelse(asq_clean$gm_crawl == "Yes", 10, 
                         ifelse(asq_clean$gm_crawl == "Sometimes", 5, 0)))
 
-### checking the scoring
-
-check_gm_item1 <- asq_clean[ , c("gm_lift_legs", "gmotor_item1")]
-head(check_gm_item1)
-
 ### total gross motor score
 
 asq_clean$gmotor_total = rowSums(asq_clean[ , c( "gmotor_item1", "gmotor_item2", "gmotor_item3", "gmotor_item4", "gmotor_item5", "gmotor_item6")], na.rm = TRUE)
@@ -153,11 +153,6 @@ asq_clean <- asq_clean %>%
   
   mutate(fmotor_item6 = ifelse(asq_clean$fm_pickup_onehand == "Yes", 10, 
                         ifelse(asq_clean$fm_pickup_onehand == "Sometimes", 5, 0)))
-
-### checking the scoring
-
-check_fm <- asq_clean[ , c("fm_pickup_onehand", "fmotor_item6")]
-head(check_fm)
 
 ### total fine motor score
 
@@ -186,10 +181,6 @@ asq_clean <- asq_clean %>%
   mutate(ps_item6 = ifelse(asq_clean$ps_bang == "Yes", 10, 
                         ifelse(asq_clean$ps_bang == "Sometimes", 5, 0)))
 
-### checking the scoring
-
-check_ps <- asq_clean[ , c("ps_pass", "ps_item5")]
-head(check_ps)
 
 ### total problem-solving score
 
@@ -217,11 +208,6 @@ asq_clean <- asq_clean %>%
   mutate(persoc_item6 = ifelse(asq_clean$persoc_toy == "Yes", 10, 
                         ifelse(asq_clean$persoc_toy == "Sometimes", 5, 0)))
 
-### checking the scoring
-
-check_persoc <- asq_clean[ , c("persoc_mirror_reach", "persoc_item4")]
-head(check_persoc)
-
 ### total personal-social score
 
 asq_clean$persoc_total = rowSums(asq_clean[ , c( "persoc_item1", "persoc_item2", "persoc_item3", "persoc_item4", "persoc_item5", "persoc_item6")], na.rm = TRUE)
@@ -230,7 +216,7 @@ asq_clean$persoc_total = rowSums(asq_clean[ , c( "persoc_item1", "persoc_item2",
 
 
 
-## adding the total asq scores to the trial_clean dataframe
+## adding the total asq scores to the trial_data dataframe
 
 trial_data <- trial_data %>% 
   left_join(select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
@@ -259,77 +245,47 @@ na_counts <- colSums(is.na(trial_clean))
 
 na_data <- data.frame(variable = names(na_counts), na_count = na_counts)
 
-ggplot(na_data, aes(x = variable,
-                    y = na_count)) +
-  geom_bar(stat = "identity")
-
 #cdi_18m has the maximum number of missing values (35)
 
 trial_clean <- na.omit(trial_clean)
   
 ```
 
-Exploratory analysis
+#Checking distribution
 
 ```{r}
-#distribution of variables
 
-##density plot of words
+##density plot of CDI scores
 ggplot(trial_clean, aes(x = cdi_18m)) + 
   geom_density(fill = "lightblue") +
   labs(title = "Density plot of words spoken at 18 months",
        x = "CDI score",
        y = "Density")
 
-#distribution of ages in the study
-hist(trial_clean$age_of_child)
-
 ##check if distribution is Poisson
-poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_no_na)
+poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_clean)
 
 dispersiontest(poisson_model)
 
-
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
+```
 
+Here is where the trouble starts:
+
+```{r}
 ##null model
 
 #not giving an AIC value
-m0 <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = quasipoisson, data = trial_clean)
+m0_quasipoisson <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = quasipoisson, data = trial_clean)
 
-#2nd try
-m_0_alt <- glmer.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, (1|participant), data = trial_clean)
+#2nd try asks for random effects and then does not recognise the v"participant" variable
+m0_nb <- glmer.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, (1|participant), data = trial_clean)
 
-#can we just assume it's poisson
-m0 <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = poisson, data = trial_clean)
+# trying the model with poisson distribution
+m0_poisson <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = poisson, data = trial_clean)
 
-#checking correlation between IMD and caregiver education
-cor.test(y = trial_clean$IMD, x = as.numeric(trial_clean$caregiver_education), method = "pearson")
-
-#visualisation - ordered bar plot
-ggplot(trial_clean, aes(x = reorder(caregiver_education,IMD),
-                       y = IMD)) +
-  geom_bar(stat = "identity") +
-  labs(title = " Relationship between IMD and caregiver education",
-       x = "Caregiver Education",
-       y = "Deprivation Index")
-
-#boxplot
-ggplot(trial_clean, aes(x = caregiver_education,
-                       y = IMD)) +
-  geom_boxplot() +
-  labs(title = " Relationship between IMD and caregiver education",
-       x = "Caregiver Education",
-       y = "Deprivation Index")
-
-#dotplot
-ggplot(trial_clean, aes(x = caregiver_education,
-                       y = IMD)) +
-  geom_jitter() +
-  labs(title = " Relationship between IMD and caregiver education",
-       x = "Caregiver Education",
-       y = "Deprivation Index")
 ```
+
 
 ## Hypothesis 1   
 Adherence will moderate the effect of intervention condition on vocabulary outcomes for infants at 18 months, with intervention effects stronger for caregivers who adhere with the intervention.
@@ -342,19 +298,21 @@ A principal stratification analysis will be conducted to account for varying com
 
 
 ```{r}
-#Generate compliance score compliance_ps: THIS IS THE PROBLEM!
+#Generate compliance score compliance_ps:
 
-m_adherence <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + ps_total + persoc_total + IMD + offset(log(total_clicks)), family = quasipoisson, data=trial_clean[trial_clean$condition == 1,])
+##gives AIC value = NA when family = quasipoisson
+m_adherence_qp <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), family = quasipoisson, data=trial_clean[trial_clean$condition == 1,])
 
-m_adherence_p <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + ps_total + persoc_total + IMD + offset(log(total_clicks)), family = poisson, data=trial_clean[trial_clean$condition == 1,])
 
-m_adherence <-  glm(click_percent ~ sex_of_child + age_of_child + baseline_asq + IMD + offset(log(total_clicks)), family = poisson, data=trial_clean[trial_clean$condition == 1,])
+#gives AIC value of infinity when family = poisson
+m_adherence_p <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), family = poisson, data=trial_clean[trial_clean$condition == 1,])
+
 
 
 
 #The continuous propensity score will then be generated for all participants in both arms of the trial
 
-trial_no_na$adherence_ps=predict(m_adherence,trial_no_na,type="response")
+trial_clean$adherence_ps=predict(m_adherence,trial_clean,type="response")
 
 #The next step will be to fit the model with compliance as a continuous variable
 
@@ -365,7 +323,6 @@ m_adherence_mod_alt = glmer.nb(cdi_18m ~ condition*adherence_ps, (1|participant)
 #comparing m_compliance_mod and M0
 
 anova(m0, m_adherence_mod)
-
 
 ```
 

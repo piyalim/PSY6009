@@ -1,0 +1,437 @@
+P number,Does your baby make high pitched squeals?,"When playing with sounds, does your baby make grunting, growling or other deep-toned sounds?","If you call your baby when you are out of sight, does she look in the direction of your voice?","When a loud noise occurs, does your baby turn to see where the sound came from?","Does your baby make sounds like ""da"", ""ga"", ""ka"" and ""ba""?","If you copy the sounds your baby makes, does your baby repeat the same sounds back to you?","While your baby is on his back, does your baby lift his legs high enough to see his feet?","When your baby is on her tummy, does she straighten both arms and push her whole chest off the bed or floor?","Does your baby roll from his back to his tummy, getting both arms out from under him?","When you put your baby on the floor, does she lean on her hands while sitting? (if she already sits up straight without leaning on her hands, mark yes for this item.)","If you hold out both hands just to balance your baby, does he support his own weight while standing?",Does your baby get into a crawling position by getting up on her hands and knees?,"Does your baby grab a toy you offer and look at it, wave it about, or chew on it for about 1 minute?",Does your baby reach for or grasp a toy using both hands at once?,"Does your baby reach for a crumb or cheerio and touch it with his finger or hand? (if he already picks up a small object the size of a pea, mark 'yes' for this question","Does your baby pick up a small toy, holding it in the center of her hand with her fingers around it?","Does your baby try to pick up a crumb or cheerio by using his thumb and all of his fingers in a raking motion, even if he isn't able to pick it up? (If he already picks up the crumb or cheerio, mark yes for this item)",Does your baby pick up a small toy with only one hand?,"When a toy is in front of your baby, does she reach for it with both hands?","When your baby is on his back, does he turn his head to look for a toy when he drops it? (if he already picks it up, mark yes for this question)","When your baby is on her back, does she try to get a toy she has dropped if she can see it?",Does your baby pick up a toy and put it in his mouth?,Does your baby pass a toy back and forth from one hand to the other?,Does your baby play by banging a toy up and down on the floor or table?,"When in front of a large mirror, does your baby smile or coo at herself?","Does your baby act differently toward strangers than he does with you and other familiar people? (Reactions to strangers may include staring, frowning, withdrawing or crying)","While lying on her back, does your baby play by grabbing her foot?","When in front of a large mirror, does your baby reach out to pat the mirror?","While your baby is on his back, does he put his foot in his mouth?","Does your baby try to get a toy that is out of reach? (She may roll, pivot on her tummy or crawl to get it)"
+1,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+2,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes
+3,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes
+4,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+5,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes
+6,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+7,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+8,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+9,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+10,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+11,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+12,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+13,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+14,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+15,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes
+16,Sometimes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes
+17,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes
+18,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes
+19,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+20,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes
+21,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+22,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet
+23,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+24,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+25,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Yes
+26,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+27,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Yes
+28,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+29,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes
+30,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+31,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+32,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes
+33,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+34,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes
+35,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+36,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes
+37,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Sometimes
+38,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+39,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+40,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+41,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+42,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes
+43,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes
+44,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes
+45,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes
+46,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+47,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+48,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Yes
+49,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+50,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+51,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes
+52,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes
+53,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+54,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+55,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+56,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes
+57,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+58,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes
+59,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+60,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes
+61,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+62,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+63,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes
+64,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,,Yes,,Sometimes,Yes,Yes,Sometimes,Yes
+65,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+66,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes
+67,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes
+68,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+69,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+70,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes
+71,Yes,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Yes
+72,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+73,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,,Yes,Not yet,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+74,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes
+75,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+76,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Not yet,Not yet,Yes
+77,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+78,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+79,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Sometimes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+80,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes
+81,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+82,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+83,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes
+84,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+85,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+86,Sometimes,Yes,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+87,Sometimes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+88,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet
+89,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes
+90,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+91,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+92,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+93,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+94,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes
+95,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes
+96,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes
+97,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+98,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Sometimes,Not yet,Yes
+99,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Not yet
+100,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes
+101,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes
+102,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Sometimes,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Not yet,Yes
+103,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Yes,Sometimes
+104,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+105,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+106,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+107,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes
+108,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes
+109,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+110,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+111,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+112,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Sometimes,Yes,Yes
+113,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+114,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Yes
+115,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+116,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes
+117,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+118,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes
+119,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+120,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes
+121,Yes,Sometimes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+122,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Yes,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Not yet
+123,Yes,Yes,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes
+124,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+125,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+126,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Not yet,Yes,Not yet
+127,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes
+128,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+129,Yes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Sometimes,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+130,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes
+131,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes
+132,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes
+133,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes
+134,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+135,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes
+136,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes
+137,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+138,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Not yet,Sometimes,Sometimes
+139,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+140,Sometimes,Not yet,Yes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes
+141,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes
+142,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes
+143,Yes,Yes,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+144,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Yes
+145,Yes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Not yet
+146,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes
+147,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+148,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+149,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Yes,Yes
+150,Sometimes,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes
+151,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Yes
+152,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+153,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+154,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes
+155,Yes,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes
+156,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+157,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+158,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes
+159,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes
+160,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Yes
+161,Yes,Yes,Yes,Yes,Yes,Sometimes,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+162,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Sometimes
+163,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+164,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes
+165,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes
+166,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+167,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet,Yes,Sometimes,Sometimes,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Yes,Not yet,Yes,Sometimes
+168,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Yes
+169,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Sometimes
+170,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+171,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Sometimes,Not yet
+172,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Sometimes
+173,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+174,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes
+175,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Yes,Yes
+176,Yes,Yes,Yes,Sometimes,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet
+177,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes
+178,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Sometimes,Sometimes
+179,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+180,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes
+181,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes
+182,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Yes
+183,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Sometimes,Yes,Not yet
+184,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes
+185,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes
+186,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,,Yes,Not yet,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Sometimes,,Not yet,Sometimes
+187,Sometimes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Yes,Not yet,Yes,Yes
+188,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes
+189,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes
+190,Yes,Not yet,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes
+191,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Not yet,Yes,Sometimes
+192,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes
+193,Sometimes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet
+194,Sometimes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Yes
+195,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet
+196,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet
+197,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes
+198,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes
+199,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Not yet
+200,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+201,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Yes
+202,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Yes,Sometimes,Not yet,Not yet,Sometimes,Yes,Sometimes,Yes,Not yet
+203,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes
+204,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes
+205,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Sometimes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+206,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet
+207,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes
+208,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet
+209,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Sometimes,Not yet,Yes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Not yet,Not yet
+210,Sometimes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Not yet,Not yet,Not yet,Sometimes
+211,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Yes
+212,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+213,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet,Sometimes
+214,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes
+215,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Not yet,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet
+216,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Not yet,Sometimes
+217,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes
+218,Sometimes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet
+219,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet
+220,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes
+221,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Sometimes
+222,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet
+223,Yes,Sometimes,Sometimes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet,Yes
+224,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Not yet,Yes,Not yet,Yes,Not yet,Sometimes
+225,Not yet,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Not yet
+226,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet
+227,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Not yet,Sometimes,Yes,Sometimes,Not yet,Sometimes,Not yet,Not yet
+228,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet
+229,Sometimes,Not yet,Sometimes,Yes,Not yet,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Yes
+230,Sometimes,Not yet,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+231,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Sometimes
+232,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes
+233,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet
+234,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet
+235,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet
+236,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet
+237,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet
+238,Not yet,Yes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Sometimes
+239,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,,Yes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Not yet
+240,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet
+241,Sometimes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet
+242,Not yet,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes
+243,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Sometimes,Not yet,Sometimes,Not yet
+244,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet
+245,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet
+246,Sometimes,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet
+247,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes
+248,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Yes
+249,Yes,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet
+250,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+251,Sometimes,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet
+252,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet
+253,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet
+254,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Yes
+255,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+256,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+257,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes
+258,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Yes,Sometimes,Yes,Not yet
+259,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Not yet
+260,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+261,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet
+262,Yes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet
+263,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet
+264,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+265,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes
+266,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet
+267,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Not yet
+268,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Yes
+269,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+270,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+271,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Yes
+272,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Sometimes,Yes,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet
+273,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+274,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes
+275,Yes,Yes,Sometimes,Not yet,Not yet,Sometimes,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Not yet,Yes,Not yet,Sometimes,Not yet
+276,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet
+277,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+278,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet
+279,Sometimes,Not yet,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+280,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes
+281,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+282,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Yes
+283,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes
+284,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Yes
+285,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Sometimes
+286,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet
+287,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes
+288,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+289,Sometimes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes
+290,Sometimes,Not yet,Sometimes,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Yes,Not yet,Sometimes
+291,Yes,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+292,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes
+293,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Not yet,Sometimes
+294,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes
+295,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet
+296,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+297,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes
+298,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Not yet,,Yes,Sometimes,Yes,Sometimes,Not yet,Yes
+299,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Yes,Sometimes
+300,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+301,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes
+302,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes
+303,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Sometimes,Sometimes
+304,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+305,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,
+306,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Sometimes,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet
+307,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+308,Yes,Not yet,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Not yet
+309,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes
+310,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet
+311,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes
+312,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes
+313,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes
+314,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes
+315,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+316,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+317,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,
+318,Yes,Sometimes,Yes,Sometimes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Sometimes,Sometimes,Yes,Not yet,Sometimes,Not yet
+319,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,,Yes
+320,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Yes,Not yet
+321,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+322,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Not yet,Sometimes,Yes
+323,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+324,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Yes,Not yet,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet,Sometimes
+325,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,
+326,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+327,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes
+328,Yes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet
+329,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Sometimes,Yes
+330,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes
+331,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Not yet
+332,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Not yet
+333,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Sometimes
+334,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Sometimes
+335,Sometimes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes
+336,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+337,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+338,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+339,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes
+340,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+341,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+342,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet
+343,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes
+344,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes
+345,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes
+346,Yes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Yes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet
+347,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Yes
+348,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet
+349,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+350,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes
+351,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes
+352,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Not yet
+353,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes
+354,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes
+355,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes
+356,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes
+357,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+358,Yes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Sometimes,Yes
+359,Sometimes,Sometimes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Yes,Sometimes,Sometimes,Not yet,Not yet
+360,Sometimes,Sometimes,Not yet,Sometimes,Sometimes,Sometimes,Yes,Not yet,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+361,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Sometimes
+362,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes
+363,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet
+364,Yes,Not yet,Not yet,Yes,Not yet,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Sometimes,Not yet,Yes
+365,Sometimes,Yes,Sometimes,Sometimes,Not yet,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes
+366,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+367,Yes,Not yet,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Sometimes,Sometimes,Not yet,Yes,Not yet,Sometimes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes
+368,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Sometimes,Not yet,Sometimes,Not yet,Yes,Not yet,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+369,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+370,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes
+371,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes
+372,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+373,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet
+374,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+375,Sometimes,Sometimes,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet
+376,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes,Sometimes,Sometimes
+377,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes
+378,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes
+379,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Sometimes
+380,Yes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Sometimes
+381,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+382,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Sometimes,Not yet,Yes
+383,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+384,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Sometimes,Not yet,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes
+385,Sometimes,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes
+386,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Not yet,Yes,Not yet,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Sometimes
+387,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+388,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+389,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+390,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+391,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+392,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Yes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Yes
+393,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Yes,Sometimes,Not yet,Not yet
+394,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes
+395,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,
+396,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Yes,Not yet,Yes
+397,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet,Yes,Not yet,Sometimes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes
+398,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+399,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+400,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes
+401,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes
+402,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Sometimes,Not yet,Sometimes,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Yes
+403,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Sometimes,Yes,Sometimes,Not yet,Not yet,Not yet
+404,Yes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet
+405,Not yet,Sometimes,Yes,Yes,Not yet,Yes,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet
+406,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Not yet,Not yet,Not yet,Sometimes
+407,Yes,Not yet,Yes,Yes,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Sometimes
+408,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+409,Sometimes,Yes,Yes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Sometimes,Sometimes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet,Not yet,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes
+410,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Yes
+411,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Sometimes,Not yet,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Yes
+412,Yes,Not yet,Yes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes
+413,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+414,Yes,Not yet,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Not yet,Not yet,Yes
+415,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+416,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Sometimes,Not yet,Sometimes,Yes,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Yes,,,Yes,Yes,Yes,Yes,,
+417,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes
+418,Yes,Yes,Sometimes,Yes,Yes,Not yet,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Sometimes,Yes,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Not yet
+419,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Sometimes,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Yes,Not yet,Sometimes,Sometimes,Sometimes,Yes,Not yet,Sometimes,Not yet
+420,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Yes,Sometimes,Not yet,Yes,Not yet,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Not yet,Not yet,Yes
+421,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Not yet,Yes,Sometimes,Not yet,Not yet,Not yet,Not yet,Sometimes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Not yet,Sometimes,Yes
+422,Sometimes,Not yet,Yes,Yes,Not yet,Sometimes,Sometimes,Not yet,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Sometimes,Yes,Not yet,Not yet,Not yet,Not yet
+423,Yes,Not yet,Sometimes,Yes,Not yet,Not yet,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Not yet,Yes,Not yet,Yes,Sometimes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes
+424,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+425,Not yet,Not yet,Sometimes,Yes,Yes,Yes,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet
+426,Yes,Yes,Not yet,Sometimes,Not yet,Yes,Yes,Yes,Not yet,Not yet,Not yet,Not yet,Yes,Yes,Not yet,Not yet,Not yet,Yes,Yes,Sometimes,Not yet,Yes,Not yet,Not yet,Not yet,Yes,Yes,Yes,Yes,Not yet
+427,Sometimes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes
+428,Yes,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes
+429,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Not yet,Yes,Sometimes,Not yet,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+430,Yes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Sometimes,Yes,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Sometimes,Yes,Yes,Yes
+431,Yes,Yes,Yes,Sometimes,Not yet,Not yet,Yes,Sometimes,Sometimes,Not yet,Sometimes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Not yet,Yes
+432,Sometimes,Yes,Yes,Yes,Yes,Sometimes,Yes,Sometimes,Yes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Sometimes,Yes
+433,Yes,Yes,Yes,Yes,Sometimes,Sometimes,Yes,Yes,Sometimes,Sometimes,Yes,Not yet,Yes,Not yet,Not yet,Not yet,Not yet,Not yet,Not yet,Sometimes,Not yet,Sometimes,Not yet,Not yet,Yes,Not yet,Yes,Sometimes,Not yet,Not yet
+434,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Not yet,Yes,Sometimes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes
+435,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+436,Yes,Yes,Yes,Yes,Sometimes,Not yet,Yes,Yes,Yes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Sometimes,Yes,Not yet,Yes,Yes,Yes,Yes,Yes

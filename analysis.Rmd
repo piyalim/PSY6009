@@ -1,0 +1,389 @@
+---
+title: "msc_dissertation"
+author: '220225579'
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r}
+#set working directory
+setwd("C:/Users/piyal/OneDrive/Desktop/R/dissertation")
+
+#loading libraries
+library("here")
+library("readr")
+library("tidyverse")
+library("lubridate")
+library("lme4")
+library("AER")
+
+#loading trial dataset
+trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(
+  participant = col_number(),
+  age_of_caregiver = col_factor(),
+  sex_of_child = col_factor(),
+  caregiver_education = col_factor(),
+  condition = col_factor(),
+  baseline_asq = col_factor(),
+  cdi_18m = col_integer(),
+  click_number = col_integer(),
+  "Possible clicks before 24m survey" = col_integer(),
+  IMD = col_integer()
+))
+
+#loading dataset with individual ASQ responses
+asq_data <- read_csv("data/Piyali_data WITH CONDITION  - ASQ baseline.csv")
+
+
+#Preparing ASQ dataset
+asq_clean <- asq_data %>% 
+  rename(participant = "P number",
+         c_high_pitch = "Does your baby make high pitched squeals?",
+         c_deep_tone = "When playing with sounds, does your baby make grunting, growling or other deep-toned sounds?",
+         c_responds_call = "If you call your baby when you are out of sight, does she look in the direction of your voice?",
+         c_responds_noise = "When a loud noise occurs, does your baby turn to see where the sound came from?",
+         c_sounds = "Does your baby make sounds like \"da\", \"ga\", \"ka\" and \"ba\"?",
+         c_imitate = "If you copy the sounds your baby makes, does your baby repeat the same sounds back to you?",
+         gm_lift_legs = "While your baby is on his back, does your baby lift his legs high enough to see his feet?",
+         gm_lift_chest = "When your baby is on her tummy, does she straighten both arms and push her whole chest off the bed or floor?",
+         gm_roll = "Does your baby roll from his back to his tummy, getting both arms out from under him?",
+         gm_lean_sit = "When you put your baby on the floor, does she lean on her hands while sitting? (if she already sits up straight without leaning on her hands, mark yes for this item.)",
+         gm_standing = "If you hold out both hands just to balance your baby, does he support his own weight while standing?",
+         gm_crawl = "Does your baby get into a crawling position by getting up on her hands and knees?",
+         
+         fm_grab = "Does your baby grab a toy you offer and look at it, wave it about, or chew on it for about 1 minute?",
+         fm_grasp = "Does your baby reach for or grasp a toy using both hands at once?",
+         fm_reach_small = "Does your baby reach for a crumb or cheerio and touch it with his finger or hand? (if he already picks up a small object the size of a pea, mark 'yes' for this question",  
+         fm_pick_toy = "Does your baby pick up a small toy, holding it in the center of her hand with her fingers around it?",
+         fm_pick_small = "Does your baby try to pick up a crumb or cheerio by using his thumb and all of his fingers in a raking motion, even if he isn't able to pick it up? (If he already picks up the crumb or cheerio, mark yes for this item)",
+         fm_pickup_onehand = "Does your baby pick up a small toy with only one hand?",
+         
+         ps_reach_front = "When a toy is in front of your baby, does she reach for it with both hands?",
+         ps_look = "When your baby is on his back, does he turn his head to look for a toy when he drops it? (if he already picks it up, mark yes for this question)",
+         ps_reach_back = "When your baby is on her back, does she try to get a toy she has dropped if she can see it?",
+         ps_mouth = "Does your baby pick up a toy and put it in his mouth?",
+         ps_pass = "Does your baby pass a toy back and forth from one hand to the other?",
+         ps_bang = "Does your baby play by banging a toy up and down on the floor or table?",
+         persoc_mirror_smile = "When in front of a large mirror, does your baby smile or coo at herself?",
+         persoc_strangers = "Does your baby act differently toward strangers than he does with you and other familiar people? (Reactions to strangers may include staring, frowning, withdrawing or crying)",
+         persoc_foot = "While lying on her back, does your baby play by grabbing her foot?",
+         persoc_mirror_reach = "When in front of a large mirror, does your baby reach out to pat the mirror?",
+         persoc_foot_mouth = "While your baby is on his back, does he put his foot in his mouth?",
+         persoc_toy = "Does your baby try to get a toy that is out of reach? (She may roll, pivot on her tummy or crawl to get it)")
+
+#scoring the ASQ subscales
+
+## scoring communication items
+asq_clean <- asq_clean %>% 
+  mutate(comm_item1 = ifelse(asq_clean$c_high_pitch == "Yes", 10, 
+                        ifelse(asq_clean$c_high_pitch == "Sometimes", 5, 0))) %>% 
+  
+  mutate(comm_item2 = ifelse(asq_clean$c_deep_tone == "Yes", 10, 
+                        ifelse(asq_clean$c_deep_tone == "Sometimes", 5, 0))) %>%
+  
+  mutate(comm_item3 = ifelse(asq_clean$c_responds_call == "Yes", 10, 
+                        ifelse(asq_clean$c_responds_call == "Sometimes", 5, 0))) %>%
+  
+  mutate(comm_item4 = ifelse(asq_clean$c_responds_noise == "Yes", 10, 
+                        ifelse(asq_clean$c_responds_noise == "Sometimes", 5, 0))) %>%
+  
+  mutate(comm_item5 = ifelse(asq_clean$c_sounds == "Yes", 10, 
+                        ifelse(asq_clean$c_sounds == "Sometimes", 5, 0))) %>%
+  
+  mutate(comm_item6 = ifelse(asq_clean$c_imitate == "Yes", 10, 
+                        ifelse(asq_clean$c_imitate == "Sometimes", 5, 0)))
+
+###checking the scoring
+
+check_item1 <- asq_clean[ , c("c_high_pitch", "comm_item1")]
+head(check_item1)
+
+### total communication score
+
+asq_clean$comm_total = rowSums(asq_clean[ , c( "comm_item1", "comm_item2", "comm_item3", "comm_item4", "comm_item5", "comm_item6")], na.rm = TRUE)
+
+
+## scoring gross motor items
+asq_clean <- asq_clean %>% 
+  mutate(gmotor_item1 = ifelse(asq_clean$gm_lift_legs == "Yes", 10, 
+                        ifelse(asq_clean$gm_lift_legs == "Sometimes", 5, 0))) %>% 
+  
+  mutate(gmotor_item2 = ifelse(asq_clean$gm_lift_chest == "Yes", 10, 
+                        ifelse(asq_clean$gm_lift_chest == "Sometimes", 5, 0))) %>%
+  
+  mutate(gmotor_item3 = ifelse(asq_clean$gm_roll == "Yes", 10, 
+                        ifelse(asq_clean$gm_roll == "Sometimes", 5, 0))) %>%
+  
+  mutate(gmotor_item4 = ifelse(asq_clean$gm_lean_sit == "Yes", 10, 
+                        ifelse(asq_clean$gm_lean_sit == "Sometimes", 5, 0))) %>%
+  
+  mutate(gmotor_item5 = ifelse(asq_clean$gm_standing == "Yes", 10, 
+                        ifelse(asq_clean$gm_standing == "Sometimes", 5, 0))) %>%
+  
+  mutate(gmotor_item6 = ifelse(asq_clean$gm_crawl == "Yes", 10, 
+                        ifelse(asq_clean$gm_crawl == "Sometimes", 5, 0)))
+
+### checking the scoring
+
+check_gm_item1 <- asq_clean[ , c("gm_lift_legs", "gmotor_item1")]
+head(check_gm_item1)
+
+### total gross motor score
+
+asq_clean$gmotor_total = rowSums(asq_clean[ , c( "gmotor_item1", "gmotor_item2", "gmotor_item3", "gmotor_item4", "gmotor_item5", "gmotor_item6")], na.rm = TRUE)
+
+         
+##scoring fine motor items
+
+asq_clean <- asq_clean %>% 
+  mutate(fmotor_item1 = ifelse(asq_clean$fm_grab == "Yes", 10, 
+                        ifelse(asq_clean$fm_grab == "Sometimes", 5, 0))) %>% 
+  
+  mutate(fmotor_item2 = ifelse(asq_clean$fm_grasp == "Yes", 10, 
+                        ifelse(asq_clean$fm_grasp == "Sometimes", 5, 0))) %>%
+  
+  mutate(fmotor_item3 = ifelse(asq_clean$fm_reach_small == "Yes", 10, 
+                        ifelse(asq_clean$fm_reach_small == "Sometimes", 5, 0))) %>%
+  
+  mutate(fmotor_item4 = ifelse(asq_clean$fm_pick_toy == "Yes", 10, 
+                        ifelse(asq_clean$fm_pick_toy == "Sometimes", 5, 0))) %>%
+  
+  mutate(fmotor_item5 = ifelse(asq_clean$fm_pick_small == "Yes", 10, 
+                        ifelse(asq_clean$fm_pick_small == "Sometimes", 5, 0))) %>%
+  
+  mutate(fmotor_item6 = ifelse(asq_clean$fm_pickup_onehand == "Yes", 10, 
+                        ifelse(asq_clean$fm_pickup_onehand == "Sometimes", 5, 0)))
+
+### checking the scoring
+
+check_fm <- asq_clean[ , c("fm_pickup_onehand", "fmotor_item6")]
+head(check_fm)
+
+### total fine motor score
+
+asq_clean$fmotor_total = rowSums(asq_clean[ , c( "fmotor_item1", "fmotor_item2", "fmotor_item3", "fmotor_item4", "fmotor_item5", "fmotor_item6")], na.rm = TRUE)
+
+
+
+## scoring problem solving items
+
+asq_clean <- asq_clean %>% 
+  mutate(ps_item1 = ifelse(asq_clean$ps_reach_front == "Yes", 10, 
+                        ifelse(asq_clean$ps_reach_front == "Sometimes", 5, 0))) %>% 
+  
+  mutate(ps_item2 = ifelse(asq_clean$ps_look == "Yes", 10, 
+                        ifelse(asq_clean$ps_look == "Sometimes", 5, 0))) %>%
+  
+  mutate(ps_item3 = ifelse(asq_clean$ps_reach_back == "Yes", 10, 
+                        ifelse(asq_clean$ps_reach_back == "Sometimes", 5, 0))) %>%
+  
+  mutate(ps_item4 = ifelse(asq_clean$ps_mouth == "Yes", 10, 
+                        ifelse(asq_clean$ps_mouth == "Sometimes", 5, 0))) %>%
+  
+  mutate(ps_item5 = ifelse(asq_clean$ps_pass == "Yes", 10, 
+                        ifelse(asq_clean$ps_pass == "Sometimes", 5, 0))) %>%
+  
+  mutate(ps_item6 = ifelse(asq_clean$ps_bang == "Yes", 10, 
+                        ifelse(asq_clean$ps_bang == "Sometimes", 5, 0)))
+
+### checking the scoring
+
+check_ps <- asq_clean[ , c("ps_pass", "ps_item5")]
+head(check_ps)
+
+### total problem-solving score
+
+asq_clean$ps_total = rowSums(asq_clean[ , c( "ps_item1", "ps_item2", "ps_item3", "ps_item4", "ps_item5", "ps_item6")], na.rm = TRUE)
+
+
+## scoring personal-social items
+
+asq_clean <- asq_clean %>% 
+  mutate(persoc_item1 = ifelse(asq_clean$persoc_mirror_smile == "Yes", 10, 
+                        ifelse(asq_clean$persoc_mirror_smile == "Sometimes", 5, 0))) %>% 
+  
+  mutate(persoc_item2 = ifelse(asq_clean$persoc_strangers == "Yes", 10, 
+                        ifelse(asq_clean$persoc_strangers == "Sometimes", 5, 0))) %>%
+  
+  mutate(persoc_item3 = ifelse(asq_clean$persoc_foot == "Yes", 10, 
+                        ifelse(asq_clean$persoc_foot == "Sometimes", 5, 0))) %>%
+  
+  mutate(persoc_item4 = ifelse(asq_clean$persoc_mirror_reach == "Yes", 10, 
+                        ifelse(asq_clean$persoc_mirror_reach == "Sometimes", 5, 0))) %>%
+  
+  mutate(persoc_item5 = ifelse(asq_clean$persoc_foot_mouth == "Yes", 10, 
+                        ifelse(asq_clean$persoc_foot_mouth == "Sometimes", 5, 0))) %>%
+  
+  mutate(persoc_item6 = ifelse(asq_clean$persoc_toy == "Yes", 10, 
+                        ifelse(asq_clean$persoc_toy == "Sometimes", 5, 0)))
+
+### checking the scoring
+
+check_persoc <- asq_clean[ , c("persoc_mirror_reach", "persoc_item4")]
+head(check_persoc)
+
+### total personal-social score
+
+asq_clean$persoc_total = rowSums(asq_clean[ , c( "persoc_item1", "persoc_item2", "persoc_item3", "persoc_item4", "persoc_item5", "persoc_item6")], na.rm = TRUE)
+
+
+
+
+
+## adding the total asq scores to the trial_clean dataframe
+
+trial_data <- trial_data %>% 
+  left_join(select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
+            by = "participant")
+
+
+#cleaning the final trial dataset
+trial_clean <- trial_data %>% 
+  mutate(participant = as.factor(participant)) %>% 
+  mutate(DOB = as.Date(DOB, format = "%d/%m/%Y")) %>%                 #changing string to date
+  mutate(age_of_child = as.numeric(difftime(Sys.Date(), DOB, units = "days")/ 30.44)) %>% 
+  mutate(caregiver_education = as.factor(caregiver_education)) %>% 
+  mutate(sex_of_caregiver = as.factor(sex_of_caregiver)) %>% 
+  filter(!grepl("^105", participant)) %>%     #deleting participant not randomised
+  rename(total_clicks = "Possible clicks before 24m survey") %>% 
+  filter(IMD <= 5) %>%  #removing IMD measures from outside England
+  mutate(IMD = as.factor(IMD)) %>% 
+    mutate(click_percent = click_number/total_clicks * 100) # calculating percentage of links clicked
+  
+
+#dealing with missing data
+
+##visualising NA values
+
+na_counts <- colSums(is.na(trial_clean))
+
+na_data <- data.frame(variable = names(na_counts), na_count = na_counts)
+
+ggplot(na_data, aes(x = variable,
+                    y = na_count)) +
+  geom_bar(stat = "identity")
+
+#cdi_18m has the maximum number of missing values (35)
+
+trial_clean <- na.omit(trial_clean)
+  
+```
+
+Exploratory analysis
+
+```{r}
+#distribution of variables
+
+##density plot of words
+ggplot(trial_clean, aes(x = cdi_18m)) + 
+  geom_density(fill = "lightblue") +
+  labs(title = "Density plot of words spoken at 18 months",
+       x = "CDI score",
+       y = "Density")
+
+#distribution of ages in the study
+hist(trial_clean$age_of_child)
+
+##check if distribution is Poisson
+poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_no_na)
+
+dispersiontest(poisson_model)
+
+
+##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
+
+##null model
+
+#not giving an AIC value
+m0 <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = quasipoisson, data = trial_clean)
+
+#2nd try
+m_0_alt <- glmer.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, (1|participant), data = trial_clean)
+
+#can we just assume it's poisson
+m0 <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = poisson, data = trial_clean)
+
+#checking correlation between IMD and caregiver education
+cor.test(y = trial_clean$IMD, x = as.numeric(trial_clean$caregiver_education), method = "pearson")
+
+#visualisation - ordered bar plot
+ggplot(trial_clean, aes(x = reorder(caregiver_education,IMD),
+                       y = IMD)) +
+  geom_bar(stat = "identity") +
+  labs(title = " Relationship between IMD and caregiver education",
+       x = "Caregiver Education",
+       y = "Deprivation Index")
+
+#boxplot
+ggplot(trial_clean, aes(x = caregiver_education,
+                       y = IMD)) +
+  geom_boxplot() +
+  labs(title = " Relationship between IMD and caregiver education",
+       x = "Caregiver Education",
+       y = "Deprivation Index")
+
+#dotplot
+ggplot(trial_clean, aes(x = caregiver_education,
+                       y = IMD)) +
+  geom_jitter() +
+  labs(title = " Relationship between IMD and caregiver education",
+       x = "Caregiver Education",
+       y = "Deprivation Index")
+```
+
+## Hypothesis 1   
+Adherence will moderate the effect of intervention condition on vocabulary outcomes for infants at 18 months, with intervention effects stronger for caregivers who adhere with the intervention.
+
+### Prediction 1:  
+The effect of intervention on infant vocabulary at 18 months will be greater for caregivers  who adhered to the intervention. 
+
+### Analysis 1     
+A principal stratification analysis will be conducted to account for varying compliance. Number of clicks will be used as a measure of compliance. A continuous propensity score will be generated using a model with number of clicks and sex, ASQ at baseline, and age of child as covariates in the intervention arm.
+
+
+```{r}
+#Generate compliance score compliance_ps: THIS IS THE PROBLEM!
+
+m_adherence <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + ps_total + persoc_total + IMD + offset(log(total_clicks)), family = quasipoisson, data=trial_clean[trial_clean$condition == 1,])
+
+m_adherence_p <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + ps_total + persoc_total + IMD + offset(log(total_clicks)), family = poisson, data=trial_clean[trial_clean$condition == 1,])
+
+m_adherence <-  glm(click_percent ~ sex_of_child + age_of_child + baseline_asq + IMD + offset(log(total_clicks)), family = poisson, data=trial_clean[trial_clean$condition == 1,])
+
+
+
+#The continuous propensity score will then be generated for all participants in both arms of the trial
+
+trial_no_na$adherence_ps=predict(m_adherence,trial_no_na,type="response")
+
+#The next step will be to fit the model with compliance as a continuous variable
+
+m_adherence_mod = glm(cdi_18m ~ condition*adherence_ps, family = poisson, data = trial_no_na)
+
+m_adherence_mod_alt = glmer.nb(cdi_18m ~ condition*adherence_ps, (1|participant), data = trial_no_na)
+
+#comparing m_compliance_mod and M0
+
+anova(m0, m_adherence_mod)
+
+
+```
+
+## Hypothesis 2   
+The moderating effect of compliance on the effect of intervention condition will vary depending on whether caregivers have a university degree.
+
+### Prediction 2  
+1. The effect of intervention on 18 month vocab will be greater for caregivers who had higher adherence, and this interaction will be moderated by caregiver education.
+
+2. The m_moderation model with the interactions between all three terms will have the lowest AIC value.
+
+### Analysis 2  
+A moderation analysis will be performed by fitting a Poisson regression with infant vocabulary outcomes as the outcome variable, compliance as measured by the propensity score and caregiver education as the main predictors, and the interaction term between compliance and education.
+
+
+You can also embed plots, for example:
+
+```{r}
+
+```
+

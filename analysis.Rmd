@@ -18,6 +18,7 @@ library("tidyverse")
 library("lubridate")
 library("lme4")
 library("AER")
+library("MuMIn")
 
 #loading trial dataset
 trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(  
@@ -295,8 +296,6 @@ A principal stratification analysis will be conducted to account for varying com
 m_adherence <-  glm.nb(click_number ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), data=trial_clean[trial_clean$condition == 1,])
 
 
-
-
 #The continuous propensity score will then be generated for all participants in both arms of the trial
 
 trial_clean$adherence_ps=predict(m_adherence,trial_clean,type="response")
@@ -315,17 +314,20 @@ anova(m0, m_adherence_mod)
 The moderating effect of compliance on the effect of intervention condition will vary depending on whether caregivers have a university degree.
 
 ### Prediction 2  
-1. The effect of intervention on 18 month vocab will be greater for caregivers who had higher adherence, and this interaction will be moderated by caregiver education.
+a. The effect of intervention on 18 month vocab will be greater for caregivers who had higher adherence, and this interaction will be moderated by caregiver education.
 
-2. The m_moderation model with the interactions between all three terms will have the lowest AIC value.
+b. The m_moderation model with the interactions between all three terms will have the lowest AIC value.
 
 ### Analysis 2  
 A moderation analysis will be performed by fitting a Poisson regression with infant vocabulary outcomes as the outcome variable, compliance as measured by the propensity score and caregiver education as the main predictors, and the interaction term between compliance and education.
 
 
-You can also embed plots, for example:
-
 ```{r}
+#fitting a model with all parameters
+
+m_moderation <-  glm.nb(cdi_18m ~ adherence_ps * caregiver_education * condition, data = trial_clean, na.action = na.fail)
+
+all_models <- dredge(m_moderation)
 
 ```
 

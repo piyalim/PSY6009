@@ -5,11 +5,11 @@ date: "`r Sys.Date()`"
 output: word_document
 ---
 
-##This first part is creating and cleaning the data. (You can run the entire 1st chunk)
+##Creating and cleaning the data.
 
 ```{r echo=FALSE}
 #set working directory
-setwd("C:/Users/piyal/OneDrive/Desktop/R/dissertation")
+setwd("C:/Users/piyal/OneDrive/Desktop/R/PSY6009/PSY6009")
 
 #loading libraries
 library("here")
@@ -233,8 +233,7 @@ trial_clean <- trial_data %>%
   filter(!grepl("^105", participant)) %>%     #deleting participant not randomised
   rename(total_clicks = "Possible clicks before 24m survey") %>% 
   filter(IMD <= 5) %>%  #removing IMD measures from outside England
-  mutate(IMD = as.factor(IMD)) %>% 
-    mutate(click_percent = click_number/total_clicks * 100) # calculating percentage of links clicked
+  mutate(IMD = as.factor(IMD))
   
 
 #dealing with missing data
@@ -270,19 +269,12 @@ dispersiontest(poisson_model)
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
 ```
 
-Here is where the trouble starts:
+Building the null model to compare future models
 
 ```{r}
 ##null model
 
-#not giving an AIC value
-m0_quasipoisson <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = quasipoisson, data = trial_clean)
-
-#2nd try asks for random effects and then does not recognise the v"participant" variable
-m0_nb <- glmer.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, (1|participant), data = trial_clean)
-
-# trying the model with poisson distribution
-m0_poisson <- glm(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, family = poisson, data = trial_clean)
+m0 <- glm.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, data = trial_clean)
 
 ```
 
@@ -300,12 +292,7 @@ A principal stratification analysis will be conducted to account for varying com
 ```{r}
 #Generate compliance score compliance_ps:
 
-##gives AIC value = NA when family = quasipoisson
-m_adherence_qp <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), family = quasipoisson, data=trial_clean[trial_clean$condition == 1,])
-
-
-#gives AIC value of infinity when family = poisson
-m_adherence_p <-  glm(click_percent ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), family = poisson, data=trial_clean[trial_clean$condition == 1,])
+m_adherence <-  glm.nb(click_number ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), data=trial_clean[trial_clean$condition == 1,])
 
 
 
@@ -316,9 +303,7 @@ trial_clean$adherence_ps=predict(m_adherence,trial_clean,type="response")
 
 #The next step will be to fit the model with compliance as a continuous variable
 
-m_adherence_mod = glm(cdi_18m ~ condition*adherence_ps, family = poisson, data = trial_no_na)
-
-m_adherence_mod_alt = glmer.nb(cdi_18m ~ condition*adherence_ps, (1|participant), data = trial_no_na)
+m_adherence_mod = glm.nb(cdi_18m ~ condition*adherence_ps, data = trial_clean)
 
 #comparing m_compliance_mod and M0
 

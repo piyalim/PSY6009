@@ -19,6 +19,7 @@ library("lubridate")
 library("lme4")
 library("AER")
 library("MuMIn")
+library("MASS")
 
 #loading trial dataset
 trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(  
@@ -245,15 +246,14 @@ na_counts <- colSums(is.na(trial_clean))
 
 na_data <- data.frame(variable = names(na_counts), na_count = na_counts)
 
+
+
 #cdi_18m has the maximum number of missing values (35)
 
 trial_clean <- na.omit(trial_clean)
   
-```
 
 #Checking distribution
-
-```{r}
 
 ##density plot of CDI scores
 ggplot(trial_clean, aes(x = cdi_18m)) + 
@@ -268,6 +268,23 @@ poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_clean)
 dispersiontest(poisson_model)
 
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
+
+
+
+
+
+#checking outliers
+tail(sort(trial_clean$cdi_18m))
+
+boxplot(trial_clean$cdi_18m, horizontal = TRUE)
+
+#gives observation number
+Boxplot(trial_clean$cdi_18m, id.method = "y")
+
+#in line with previous findings, 300 words is taken as the cut-off for determining outliers
+#revising the clean dataset without row numbers identified
+
+trial_clean <- trial_clean[-c(91, 339, 81), ]
 ```
 
 Building the null model to compare future models
@@ -276,7 +293,7 @@ Building the null model to compare future models
 ##null model
 
 m0 <- glm.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, data = trial_clean)
-
+summary(m0)
 ```
 
 

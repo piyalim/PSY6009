@@ -1,0 +1,49 @@
+This dataset contains the responses on the Ages and Stages Questionnaire for each infant at the age of 6 months old. Each item was scored "Yes", "Sometimes", and "Not yet" by their caregivers.
+
+
+ [1] "P number"   Participant number assigned by researchers           
+
+Communication subscale items 
+                                                                                                                                                                                                  
+ [2] "Does your baby make high pitched squeals?"                                                                                                                                                                                
+ [3] "When playing with sounds, does your baby make grunting, growling or other deep-toned sounds?"                                                                                                                             
+ [4] "If you call your baby when you are out of sight, does she look in the direction of your voice?"                                                                                                                           
+ [5] "When a loud noise occurs, does your baby turn to see where the sound came from?"                                                                                                                                          
+ [6] "Does your baby make sounds like \"da\", \"ga\", \"ka\" and \"ba\"?"                                                                                                                                                       
+ [7] "If you copy the sounds your baby makes, does your baby repeat the same sounds back to you?"    
+
+Gross motor subscale items 
+                                                                                                                          
+ [8] "While your baby is on his back, does your baby lift his legs high enough to see his feet?"                                                                                                                                
+ [9] "When your baby is on her tummy, does she straighten both arms and push her whole chest off the bed or floor?"                                                                                                             
+[10] "Does your baby roll from his back to his tummy, getting both arms out from under him?"                                                                                                                                    
+[11] "When you put your baby on the floor, does she lean on her hands while sitting? (if she already sits up straight without leaning on her hands, mark yes for this item.)"                                                   
+[12] "If you hold out both hands just to balance your baby, does he support his own weight while standing?"                                                                                                                     
+[13] "Does your baby get into a crawling position by getting up on her hands and knees?" 
+
+Fine motor subscale items    
+                                                                                                                                   
+[14] "Does your baby grab a toy you offer and look at it, wave it about, or chew on it for about 1 minute?"                                                                                                                     
+[15] "Does your baby reach for or grasp a toy using both hands at once?"                                                                                                                                                        
+[16] "Does your baby reach for a crumb or cheerio and touch it with his finger or hand? (if he already picks up a small object the size of a pea, mark 'yes' for this question"                                                 
+[17] "Does your baby pick up a small toy, holding it in the center of her hand with her fingers around it?"                                                                                                                     
+[18] "Does your baby try to pick up a crumb or cheerio by using his thumb and all of his fingers in a raking motion, even if he isn't able to pick it up? (If he already picks up the crumb or cheerio, mark yes for this item)"
+[19] "Does your baby pick up a small toy with only one hand?"                                                                                                                                                                   
+
+Problem-solving subscale items  
+
+[20] "When a toy is in front of your baby, does she reach for it with both hands?"                                                                                                                                         
+[21] "When your baby is on his back, does he turn his head to look for a toy when he drops it? (if he already picks it up, mark yes for this question)"                                                                         
+[22] "When your baby is on her back, does she try to get a toy she has dropped if she can see it?"                                                                                                                              
+[23] "Does your baby pick up a toy and put it in his mouth?"                                                                                                                                                                    
+[24] "Does your baby pass a toy back and forth from one hand to the other?"                                                                                                                                                     
+[25] "Does your baby play by banging a toy up and down on the floor or table?"                                                                                                                                                  
+
+Personal-Social Subscale Items
+ 
+[26] "When in front of a large mirror, does your baby smile or coo at herself?"                                                                                                                                              
+[27] "Does your baby act differently toward strangers than he does with you and other familiar people? (Reactions to strangers may include staring, frowning, withdrawing or crying)"                                           
+[28] "While lying on her back, does your baby play by grabbing her foot?"                                                                                                                                                     
+[29] "When in front of a large mirror, does your baby reach out to pat the mirror?"                                                                                                                                             
+[30] "While your baby is on his back, does he put his foot in his mouth?"                                                                                                                                                       
+[31] "Does your baby try to get a toy that is out of reach? (She may roll, pivot on her tummy or crawl to get it)"   

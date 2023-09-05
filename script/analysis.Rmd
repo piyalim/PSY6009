@@ -287,11 +287,14 @@ trial_clean <- trial_clean[-c(91, 339, 81), ]
 -------------------------#Checking distribution of outcome----------------------------
 
 ##density plot of CDI scores
-ggplot(trial_clean, aes(x = cdi_18m)) + 
+distribution_vocab <- ggplot(trial_clean, aes(x = cdi_18m)) + 
   geom_density(fill = "lightblue") +
-  labs(title = "Density plot of words spoken at 18 months",
+  labs(title = "Density plot of children's vocabulary at 18 months",
        x = "CDI score",
        y = "Density")
+
+ggsave(here("figures", "distribution_vocab.png"), 
+       plot = distribution_vocab, width = 25, height = 15, units = "cm")
 
 ##check if distribution is Poisson
 poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_clean)
@@ -299,6 +302,9 @@ poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_clean)
 dispersiontest(poisson_model)
 
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
+
+
+#------------------exploring predictor variables------------------------------------
 
 
 ```

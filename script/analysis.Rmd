@@ -8,8 +8,6 @@ output: word_document
 ##Creating and cleaning the data.
 
 ```{r echo=FALSE}
-#set working directory
-setwd("C:/Users/piyal/OneDrive/Desktop/R/PSY6009/PSY6009")
 
 #loading libraries
 library("here")
@@ -20,9 +18,16 @@ library("lme4")
 library("AER")
 library("MuMIn")
 library("MASS")
+library("psych")
+
+#-----------------IMPORTING DATA------------------------------
+
+source1 <- here("data", "dissertation_data.csv")
+source2 <- here("data","Piyali_data WITH CONDITION  - ASQ baseline.csv")
+
 
 #loading trial dataset
-trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(  
+trial_data <- read_csv(source1, col_types = cols(  
   participant = col_number(),
   age_of_caregiver = col_factor(),
   sex_of_child = col_factor(),
@@ -36,12 +41,12 @@ trial_data <- read_csv("data/dissertation_data.csv", col_types = cols(
 ))
 
 
-
-
 #loading dataset with individual ASQ responses
-asq_data <- read_csv("data/Piyali_data WITH CONDITION  - ASQ baseline.csv")
+asq_data <- read_csv(source2)
 
 
+
+#-------------cleaning ASQ responses--------------------------------
 
 #Renaming ASQ dataset
 asq_clean <- asq_data %>% 
@@ -81,9 +86,7 @@ asq_clean <- asq_data %>%
 
 
 
-
-
-#scoring the ASQ subscales
+#----------------------scoring the ASQ subscales-------------------------------
 
 ## scoring communication items
 asq_clean <- asq_clean %>% 
@@ -218,11 +221,20 @@ asq_clean$persoc_total = rowSums(asq_clean[ , c( "persoc_item1", "persoc_item2",
 
 
 
-## adding the total asq scores to the trial_data dataframe
+##------------preparing the final dataset---------------------------------------
 
+#adding the total asq scores to the trial_data dataframe
 trial_data <- trial_data %>% 
-  left_join(select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
+  left_join(x = trial_data,
+            y = select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
             by = "participant")
+
+#in case the last one doesn't work!
+trial_data <- trial_data %>% 
+  left_join(x = trial_data,
+            y = asq_clean,
+            by = "participant")
+
 
 
 #cleaning the final trial dataset
@@ -237,23 +249,42 @@ trial_clean <- trial_data %>%
   filter(IMD <= 5) %>%  #removing IMD measures from outside England
   mutate(IMD = as.factor(IMD))
   
+```
 
-#dealing with missing data
+#Exploring the final dataset
+
+```{r}
+--------------------#dealing with missing data----------------------
 
 ##visualising NA values
 
 na_counts <- colSums(is.na(trial_clean))
 
 na_data <- data.frame(variable = names(na_counts), na_count = na_counts)
-
-
+na_data
 
 #cdi_18m has the maximum number of missing values (35)
+## we cannot impute the value because the same variables will be used further in the analysis
+##hence we will be deleting the observations with NA values
 
 trial_clean <- na.omit(trial_clean)
+
+
+-----------------------#checking outliers----------------------------------
+tail(sort(trial_clean$cdi_18m))
+
+boxplot(trial_clean$cdi_18m, horizontal = TRUE)
+
+#gives observation number
+Boxplot(trial_clean$cdi_18m, id.method = "y")
+
+#in line with previous findings, 300 words is taken as the cut-off for determining outliers
+#revising the clean dataset without row numbers identified
+
+trial_clean <- trial_clean[-c(91, 339, 81), ]
   
 
-#Checking distribution
+-------------------------#Checking distribution of outcome----------------------------
 
 ##density plot of CDI scores
 ggplot(trial_clean, aes(x = cdi_18m)) + 
@@ -270,29 +301,14 @@ dispersiontest(poisson_model)
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
 
 
-
-
-
-#checking outliers
-tail(sort(trial_clean$cdi_18m))
-
-boxplot(trial_clean$cdi_18m, horizontal = TRUE)
-
-#gives observation number
-Boxplot(trial_clean$cdi_18m, id.method = "y")
-
-#in line with previous findings, 300 words is taken as the cut-off for determining outliers
-#revising the clean dataset without row numbers identified
-
-trial_clean <- trial_clean[-c(91, 339, 81), ]
 ```
 
 Building the null model to compare future models
 
 ```{r}
 ##null model
-
 m0 <- glm.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, data = trial_clean)
+
 summary(m0)
 ```
 
@@ -308,7 +324,7 @@ A principal stratification analysis will be conducted to account for varying com
 
 
 ```{r}
-#Generate compliance score compliance_ps:
+#Generate compliance score adherence_ps:
 
 m_adherence <-  glm.nb(click_number ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), data=trial_clean[trial_clean$condition == 1,])
 
@@ -320,6 +336,7 @@ trial_clean$adherence_ps=predict(m_adherence,trial_clean,type="response")
 #The next step will be to fit the model with compliance as a continuous variable
 
 m_adherence_mod = glm.nb(cdi_18m ~ condition*adherence_ps, data = trial_clean)
+summary(m_adherence_mod)
 
 #comparing m_compliance_mod and M0
 
@@ -343,8 +360,9 @@ A moderation analysis will be performed by fitting a Poisson regression with inf
 #fitting a model with all parameters
 
 m_moderation <-  glm.nb(cdi_18m ~ adherence_ps * caregiver_education * condition, data = trial_clean, na.action = na.fail)
+summary(m_moderation)
 
 all_models <- dredge(m_moderation)
-
+all_models
 ```
 

@@ -1,0 +1,25 @@
+Data obtained from 
+
+ [1] "participant"  	participant id in integers starting from 0         
+             
+ [2] "DOB"  		child's date of birth in dd/mm/yyyy                            
+
+ [3] "age_of_caregiver" as reported by caregiver, grouped into "Up to 20", "21-25", "26-30", "31-35", "36-40" and "40+"
+                   
+ [4] "sex_of_child"  	 Values are Boy or Girl         
+            
+ [5] "sex_of_caregiver"  Self-reported by caregiver as what their baby identifies them by. Values are character strings
+                 
+ [6] "caregiver_education" Values are "Degree" or "No degree" 
+            
+ [7] "condition"    	Values are 0 for control condition, 1 for intervention condition randomly assigned
+                     
+ [8] "baseline_asq"  	Threshold score on the Ages and Stages Questionnaire at 6 months of age. Values are 0 = below threshold, and 1 = above threshold
+                     
+ [9] "cdi_18m"       	Scores on the McArthur-Bates Communicative Development Inventories at 18 months of age, caregiver-reported
+                     
+[10] "click_number"     Number of links the caregiver has clicked on to access videos       
+         
+[11] "Possible clicks before 24m survey" Total number of links sent to the caregiver in both experimental conditions 
+
+[12] "IMD" 		Index of Multiple Deprivation decile, values range from 1-5 for residents in England

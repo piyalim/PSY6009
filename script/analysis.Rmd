@@ -20,6 +20,7 @@ library("MuMIn")
 library("MASS")
 library("psych")
 library("sjPlot")
+library("effectsize")
 
 #-----------------IMPORTING DATA------------------------------
 
@@ -227,10 +228,10 @@ Preparing the final dataset
 ##------------preparing the final dataset---------------------------------------
 
 #adding the total asq scores to the trial_data dataframe
-trial_data <- trial_data %>% 
-  left_join(x = trial_data,
-            y = select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
-            by = "participant")
+#trial_data <- trial_data %>% 
+#  left_join(x = trial_data,
+#            y = select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
+#            by = "participant")
 
 #in case the last one doesn't work!
 trial_data <- trial_data %>% 
@@ -283,10 +284,10 @@ Boxplot(trial_clean$cdi_18m, id.method = "y")
 #in line with previous findings, 300 words is taken as the cut-off for determining outliers
 #revising the clean dataset without row numbers identified
 
-trial_clean <- trial_clean[-c(89, 328, 71), ]
+trial_clean <- trial_clean[-c(89, 328, 79), ]
   
 
--------------------------#Checking distribution of outcome----------------------------
+#-------------------------Checking distribution of outcome----------------------------
 
 ##density plot of CDI scores
 distribution_vocab <- ggplot(trial_clean, aes(x = cdi_18m)) + 
@@ -306,12 +307,19 @@ dispersiontest(poisson_model)
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
 
 
-------------------#checking correlation between IMD and caregiver education---------
+#------------------checking correlation between IMD and caregiver education---------
 cor.test(y = as.numeric(trial_clean$IMD), x = as.numeric(trial_clean$caregiver_education), method = "pearson")
 
 #the correlation is not significant, and will be added to the future models
 
 #------------------exploring predictor variables------------------------------------
+
+trial_clean %>% group_by(condition) %>% 
+  summarise(min(cdi_18m), max(cdi_18m), median(cdi_18m))
+
+trial_clean %>% group_by(condition) %>% 
+  summarise(min(age_of_child), max(age_of_child), mean(age_of_child), median(age_of_child))
+
 
 tab_xtab(
   var.row = trial_clean$condition,
@@ -356,16 +364,6 @@ trial_clean %>% group_by(condition)%>%
   summarise(mean(fmotor_total), sd(fmotor_total))
 ```
 
-Building the null model to compare future models
-
-```{r}
-##null model
-m0 <- glm.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, data = trial_clean)
-
-summary(m0)
-```
-
-
 ## Hypothesis 1   
 Adherence will moderate the effect of intervention condition on vocabulary outcomes for infants at 18 months, with intervention effects stronger for caregivers who adhere with the intervention.
 
@@ -377,23 +375,52 @@ A principal stratification analysis will be conducted to account for varying com
 
 
 ```{r}
-#Generate compliance score adherence_ps:
+##null model to compare alternate models
+m0 <- glm.nb(cdi_18m ~ scale(age_of_child,scale=FALSE) + condition, data = trial_clean)
+summary(m0)
 
-m_adherence <-  glm.nb(click_number ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), data=trial_clean[trial_clean$condition == 1,])
+#converting log odds to cohen's d
+oddsratio_to_d(m0$coefficients, log = TRUE)
+
+#Generate compliance score adherence_ps:
+m_adherence_ps <-  glm.nb(click_number ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), data=trial_clean[trial_clean$condition == 1,])
+summary(m_adherence_ps)
+
+#converting log odds to cohen's d
+oddsratio_to_d(m_adherence_ps$coefficients, log = TRUE)
 
 
 #The continuous propensity score will then be generated for all participants in both arms of the trial
-
 trial_clean$adherence_ps=predict(m_adherence,trial_clean,type="response")
 
-#The next step will be to fit the model with compliance as a continuous variable
+#Adherence as a covariate
+m_adherence = glm.nb(cdi_18m ~ condition + adherence_ps, data = trial_clean)
+summary(m_adherence)
 
+#converting log odds to cohen's d
+oddsratio_to_d(m_adherence$coefficients, log = TRUE)
+
+
+#Adherence as the moderating variable
 m_adherence_mod = glm.nb(cdi_18m ~ condition*adherence_ps, data = trial_clean)
 summary(m_adherence_mod)
 
-#comparing m_compliance_mod and M0
+#converting log odds to cohen's d
+oddsratio_to_d(m_adherence_mod$coefficients, log = TRUE)
 
-anova(m0, m_adherence_mod)
+#visualising adherence
+ggplot(data = trial_clean, aes(x = adherence_ps,
+                               y = cdi_18m)) +
+  geom_point() +
+  geom_smooth(method = "glm", 
+              method.args = list(family = negative.binomial))
+
+#comparing m_compliance_mod and M0
+anova(m0, m_adherence)
+
+
+#choosing the best model
+model.sel( m_adherence_mod, m_adherence,m0)
 
 ```
 
@@ -412,10 +439,26 @@ A moderation analysis will be performed by fitting a Poisson regression with inf
 ```{r}
 #fitting a model with all parameters
 
-m_moderation <-  glm.nb(cdi_18m ~ adherence_ps * caregiver_education * condition, data = trial_clean, na.action = na.fail)
-summary(m_moderation)
+m_education_mod <-  glm.nb(cdi_18m ~ adherence_ps * caregiver_education * condition, data = trial_clean, na.action = na.fail)
+summary(m_education_mod)
 
-all_models <- dredge(m_moderation)
+#converting log odds to cohen's d
+oddsratio_to_d(m_education_mod$coefficients, log = TRUE)
+
+all_models <- dredge(m_education_mod)
 all_models
-```
 
+```
+```{r}
+#----------------visualisation--------------------------
+
+p1 <- ggplot(data = trial_clean,
+             mapping = aes(x = adherence_ps,
+                           y = cdi_18m,
+                           colour = condition)) +
+  geom_smooth(method = "glm",
+              se = FALSE,
+              method.args = list(family = negative.binomial))+                                  #drawing the scatter plot
+  geom_point(alpha = 0.5)
+
+```

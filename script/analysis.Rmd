@@ -23,6 +23,7 @@ library("sjPlot")
 library("effectsize")
 library("rempsyc")
 library("flextable")
+library("patchwork")
 
 #-----------------IMPORTING DATA------------------------------
 
@@ -52,7 +53,7 @@ asq_data <- read_csv(source2)
 
 #-------------cleaning ASQ responses--------------------------------
 
-#Renaming ASQ dataset
+#Renaming ASQ dataset columns
 asq_clean <- asq_data %>% 
   rename(participant = "P number",
          c_high_pitch = "Does your baby make high pitched squeals?",
@@ -235,24 +236,27 @@ trial_data <- trial_data %>%
             y = dplyr::select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
             by = "participant")
 
-#in case the last one doesn't work!
-#trial_data <- trial_data %>% 
-#  left_join(x = trial_data,
-#            y = asq_clean,
-#            by = "participant")
-
 
 
 #cleaning the final trial dataset
 trial_clean <- trial_data %>% 
+  #setting participant as class integer
   mutate(participant = as.integer(participant)) %>% 
-  mutate(DOB = as.Date(DOB, format = "%d/%m/%Y")) %>%                 #changing string to date
+  #setting date of birth as class date
+  mutate(DOB = as.Date(DOB, format = "%d/%m/%Y")) %>%
+  #adding column with calculated age of child
   mutate(age_of_child = as.numeric(difftime(Sys.Date(), DOB, units = "days")/ 30.44)) %>% 
+  #setting caregiver_education as class factor
   mutate(caregiver_education = as.factor(caregiver_education)) %>% 
+  #setting caregiver sex as class factor
   mutate(sex_of_caregiver = as.factor(sex_of_caregiver)) %>% 
-  filter(!grepl("^105", participant)) %>%     #deleting participant not randomised
+  #deleting participant not randomised
+  filter(!grepl("^105", participant)) %>%
+  #renaming column to user-friendly name
   rename(total_clicks = "Possible clicks before 24m survey") %>% 
-  filter(IMD <= 5) %>%  #removing IMD measures from outside England
+  #removing IMD measures from outside England as per pre-registration
+  filter(IMD <= 5) %>%  
+  #setting IMD as class factor
   mutate(IMD = as.factor(IMD))
   
 ```
@@ -263,59 +267,77 @@ trial_clean <- trial_data %>%
 #--------------------dealing with missing data----------------------
 
 ##visualising NA values
+
+#calculating the number of NA values in each column
 na_counts <- colSums(is.na(trial_clean))
 
+#creating a dataframe of variable names and the total NA counts for each
 na_data <- data.frame(variable = names(na_counts), na_count = na_counts)
+
+#view the dataframe
 na_data
 
 #cdi_18m has the maximum number of missing values (35)
 ## we cannot impute the value because the same variables will be used further in the analysis
 ##hence we will be deleting the observations with NA values
 
+#deleting NA values from the final dataset
 trial_clean <- na.omit(trial_clean)
 
 
 #-----------------------checking outliers----------------------------------
+
+#viewing the most extreme values of the outcome variable
 tail(sort(trial_clean$cdi_18m))
 
+#visualising number of extreme values for outcome variable
 boxplot(trial_clean$cdi_18m, horizontal = TRUE)
 
-#gives observation number
+#obtaining the observation number of most extreme values
 Boxplot(trial_clean$cdi_18m, id.method = "y")
 
 #in line with previous findings, 300 words is taken as the cut-off for determining outliers
 #revising the clean dataset without row numbers identified
-
-trial_clean <- trial_clean[-c(91, 339, 81), ] #check if same as output - 91, 339, 81
+trial_clean <- trial_clean[-c(91, 339, 81), ] 
   
 
 #-------------------------Checking distribution of outcome----------------------------
 
 ##density plot of CDI scores
 distribution_vocab <- ggplot(trial_clean, aes(x = cdi_18m)) + 
-  geom_density(fill = "lightblue") +
+  geom_density(colour = "#89CFF0",
+               fill = "#89CFF0") +
   labs(title = "Density plot of children's vocabulary at 18 months",
        x = "CDI score",
-       y = "Density")
+       y = "Density")+
+  theme_classic()
 
 ggsave(here("figures", "distribution_vocab.png"), 
        plot = distribution_vocab, width = 25, height = 15, units = "cm")
 
-##check if distribution is Poisson
+##checking if distribution is Poisson
 poisson_model <- glm(cdi_18m ~ 1, family = poisson, data = trial_clean)
 
+#checking for overdispersion
 dispersiontest(poisson_model)
 
 ##there appears to be overdispersion, hence negative binomial regression will be fitted going ahead
 
 
-#------------------checking correlation between IMD and caregiver education---------
-cor.test(y = as.numeric(trial_clean$IMD), x = as.numeric(trial_clean$caregiver_education), method = "pearson")
+#------------------IMD and caregiver education---------
+
+#checking correlation between IMD and caregiver education
+#if not correlated, IMD will be added to future models
+cor.test(y = as.numeric(trial_clean$IMD), 
+         x = as.numeric(trial_clean$caregiver_education), 
+         method = "pearson")
 
 
+#the correlation is not significant, and IMD will be added to the future models
+```
 
-#the correlation is not significant, and will be added to the future models
 
+```{r}
 #------------------exploring predictor variables------------------------------------
 
 trial_clean %>% group_by(condition) %>% 
@@ -366,6 +388,7 @@ trial_clean %>% group_by(condition)%>%
 
 trial_clean %>% group_by(condition)%>% 
   summarise(mean(fmotor_total), sd(fmotor_total))
+
 ```
 
 ## Hypothesis 1   
@@ -415,14 +438,8 @@ summary(m_adherence_mod)
 oddsratio_to_d(m_adherence_mod$coefficients, log = TRUE)
 
 
-#comparing m_compliance_mod and M0
-anova(m0, m_adherence)
-
-
 #choosing the best model
 model.sel( m_adherence_mod, m_adherence,m0)
-
-
 
 ```
 
@@ -455,32 +472,76 @@ all_models
 
 
 ```{r}
-#----------------visualisation--------------------------
+#----------------visualisations--------------------------
 
-p1 <- ggplot(data = trial_clean,
+#distribution of propensity scores vs actual compliance
+
+adherence_ps_plot <- ggplot(trial_clean, aes(x = adherence_ps)) + 
+  geom_density(colour = "#89CFF0",
+               fill = "#89CFF0") +
+  labs(title = "Adherence as estimated by propensity score",
+       x = "Adherence propensity score",
+       y = "Density")+
+  theme_classic()
+
+
+adherence_plot <- ggplot(trial_clean, aes(x = (trial_clean$click_number/trial_clean$total_clicks * 100))) + 
+  geom_density( colour = "#F4C2C2",
+                fill = "#F4C2C2") +
+  labs(title = "Adherence as percentage of links clicked",
+       x = "Percentage of links clicked",
+       y = "Density")+
+  theme_classic()
+
+adherence_scores_plot <- adherence_ps_plot + adherence_plot +
+  plot_annotation(
+    title = "Comparing two estimates of adherence"
+  )
+
+ggsave(here("figures", "adherence_scores_plot.png"), 
+       plot = adherence_scores_plot, width = 25, height = 15, units = "cm")
+
+#visualising outcomes moderated by adherence
+
+adherence_mod_plot <- ggplot(data = trial_clean,
              mapping = aes(x = adherence_ps,
                            y = cdi_18m,
                            colour = condition)) +
   geom_smooth(method = "glm",
-              se = FALSE,
-              method.args = list(family = negative.binomial))+                                  #drawing the scatter plot
-  geom_point(alpha = 0.5)
+              se = FALSE) +                                  
+  geom_point() +
+  labs(title = "Adherence as a moderator of effect of experimental condition on child language outcomes",
+       x = "Adherence",
+       y = "Score on CDI at 18 months") +
+  theme_classic()+
+  scale_color_manual(values = c("#89cff0", "#F4C2C2"))
 
+ggsave(here("figures", "adherence_mod_plot.png"), 
+       plot = adherence_mod_plot, width = 25, height = 15, units = "cm")
 
 ```
+
+
 
 ```{r}
 #----------------creating the tables for the models--------------------------
 
 #table_2: Null model: effect of intervention on CDI score at 18months
+
+#creating table of coefficients
 table_m0 <- as.data.frame(summary(m0)$coefficients)
+#calculating confidence intervals
 CI <- confint(m0)
+#combining the row names, values, and confidence intervals
 table_m0 <- cbind(row.names(table_m0), table_m0, CI)
+#setting the column names
 names(table_m0) <- c("Term", "B", "SE", "t", "p", "CI_lower", "CI_upper")
+#defining the parameters of the word document
 m0_word <- nice_table(table_m0,
            title = c("Table 2", "Null model predicting Vocabulary as a function of experimental condition and age"),
            note = c("* p < .05, ** p < .01, *** p < .001"))
 
+#saving tables as docx files
 save_as_docx(m0_word, path = here("tables", "table_2.docx"))
 
 

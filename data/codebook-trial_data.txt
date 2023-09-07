@@ -12,7 +12,7 @@ Data obtained from
                  
  [6] "caregiver_education" Values are "Degree" or "No degree" 
             
- [7] "condition"    	Values are 0 for control condition, 1 for intervention condition randomly assigned
+ [7] "condition"    	Values are 0 for control condition, 1 for intervention condition randomly assigned. To preserve blinding for this on-going RCT, this variable has been removed.
                      
  [8] "baseline_asq"  	Threshold score on the Ages and Stages Questionnaire at 6 months of age. Values are 0 = below threshold, and 1 = above threshold
                      

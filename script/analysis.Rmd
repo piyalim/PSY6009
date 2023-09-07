@@ -230,16 +230,16 @@ Preparing the final dataset
 ##------------preparing the final dataset---------------------------------------
 
 #adding the total asq scores to the trial_data dataframe
-#trial_data <- trial_data %>% 
-#  left_join(x = trial_data,
-#            y = select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
-#            by = "participant")
-
-#in case the last one doesn't work!
 trial_data <- trial_data %>% 
   left_join(x = trial_data,
-            y = asq_clean,
+            y = dplyr::select(asq_clean, participant, comm_total, gmotor_total, fmotor_total, ps_total, persoc_total),
             by = "participant")
+
+#in case the last one doesn't work!
+#trial_data <- trial_data %>% 
+#  left_join(x = trial_data,
+#            y = asq_clean,
+#            by = "participant")
 
 
 
@@ -257,7 +257,7 @@ trial_clean <- trial_data %>%
   
 ```
 
-#Exploring the final dataset
+#Checking assumptions
 
 ```{r}
 #--------------------dealing with missing data----------------------
@@ -286,7 +286,7 @@ Boxplot(trial_clean$cdi_18m, id.method = "y")
 #in line with previous findings, 300 words is taken as the cut-off for determining outliers
 #revising the clean dataset without row numbers identified
 
-trial_clean <- trial_clean[-c(89, 328, 79), ]
+trial_clean <- trial_clean[-c(91, 339, 81), ] #check if same as output - 91, 339, 81
   
 
 #-------------------------Checking distribution of outcome----------------------------
@@ -311,6 +311,8 @@ dispersiontest(poisson_model)
 
 #------------------checking correlation between IMD and caregiver education---------
 cor.test(y = as.numeric(trial_clean$IMD), x = as.numeric(trial_clean$caregiver_education), method = "pearson")
+
+
 
 #the correlation is not significant, and will be added to the future models
 
@@ -449,6 +451,9 @@ all_models <- dredge(m_education_mod)
 all_models
 
 ```
+
+
+
 ```{r}
 #----------------visualisation--------------------------
 

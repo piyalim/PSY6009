@@ -21,6 +21,8 @@ library("MASS")
 library("psych")
 library("sjPlot")
 library("effectsize")
+library("rempsyc")
+library("flextable")
 
 #-----------------IMPORTING DATA------------------------------
 
@@ -382,6 +384,7 @@ summary(m0)
 #converting log odds to cohen's d
 oddsratio_to_d(m0$coefficients, log = TRUE)
 
+
 #Generate compliance score adherence_ps:
 m_adherence_ps <-  glm.nb(click_number ~ sex_of_child + age_of_child + comm_total + gmotor_total + fmotor_total + IMD + offset(log(total_clicks)), data=trial_clean[trial_clean$condition == 1,])
 summary(m_adherence_ps)
@@ -390,8 +393,9 @@ summary(m_adherence_ps)
 oddsratio_to_d(m_adherence_ps$coefficients, log = TRUE)
 
 
+
 #The continuous propensity score will then be generated for all participants in both arms of the trial
-trial_clean$adherence_ps=predict(m_adherence,trial_clean,type="response")
+trial_clean$adherence_ps=predict(m_adherence_ps,trial_clean,type="response")
 
 #Adherence as a covariate
 m_adherence = glm.nb(cdi_18m ~ condition + adherence_ps, data = trial_clean)
@@ -408,12 +412,6 @@ summary(m_adherence_mod)
 #converting log odds to cohen's d
 oddsratio_to_d(m_adherence_mod$coefficients, log = TRUE)
 
-#visualising adherence
-ggplot(data = trial_clean, aes(x = adherence_ps,
-                               y = cdi_18m)) +
-  geom_point() +
-  geom_smooth(method = "glm", 
-              method.args = list(family = negative.binomial))
 
 #comparing m_compliance_mod and M0
 anova(m0, m_adherence)
@@ -421,6 +419,8 @@ anova(m0, m_adherence)
 
 #choosing the best model
 model.sel( m_adherence_mod, m_adherence,m0)
+
+
 
 ```
 
@@ -461,4 +461,57 @@ p1 <- ggplot(data = trial_clean,
               method.args = list(family = negative.binomial))+                                  #drawing the scatter plot
   geom_point(alpha = 0.5)
 
+
 ```
+
+```{r}
+#----------------creating the tables for the models--------------------------
+
+#table_2: Null model: effect of intervention on CDI score at 18months
+table_m0 <- as.data.frame(summary(m0)$coefficients)
+CI <- confint(m0)
+table_m0 <- cbind(row.names(table_m0), table_m0, CI)
+names(table_m0) <- c("Term", "B", "SE", "t", "p", "CI_lower", "CI_upper")
+m0_word <- nice_table(table_m0,
+           title = c("Table 2", "Null model predicting Vocabulary as a function of experimental condition and age"),
+           note = c("* p < .05, ** p < .01, *** p < .001"))
+
+save_as_docx(m0_word, path = here("tables", "table_2.docx"))
+
+
+##table_3: Effect of adherence on CDI score
+table_m_adherence <- as.data.frame(summary(m_adherence)$coefficients)
+CI <- confint(m_adherence)
+table_m_adherence <- cbind(row.names(table_m_adherence), table_m_adherence, CI)
+names(table_m_adherence) <- c("Term", "B", "SE", "t", "p", "CI_lower", "CI_upper")
+m_adherence_word <- nice_table(table_m_adherence,
+           title = c("Table 3", "Effect of adherence on CDI scores at 18 months"),
+           note = c("* p < .05, ** p < .01, *** p < .001"))
+ 
+save_as_docx(m_adherence_word, path = here("tables", "table_3.docx"))
+
+
+#table_4: Moderating effect of adherence
+table_adherence_mod <- as.data.frame(summary(m_adherence_mod)$coefficients)
+CI <- confint(m_adherence_mod)
+table_adherence_mod <- cbind(row.names(table_adherence_mod), table_adherence_mod, CI)
+names(table_adherence_mod) <- c("Term", "B", "SE", "t", "p", "CI_lower", "CI_upper")
+adherence_mod_word <- nice_table(table_adherence_mod,
+           title = c("Table 4", "Moderating effect of adherence on experimental condition and CDI score at 18 months"),
+           note = c("* p < .05, ** p < .01, *** p < .001"))
+
+save_as_docx(adherence_mod_word, path = here("tables", "table_4.docx"))
+
+
+#table_5: Effect of education, adherence, and experimental condition
+table_education_mod <- as.data.frame(summary(m_education_mod)$coefficients)
+CI <- confint(m_education_mod)
+table_education_mod <- cbind(row.names(table_education_mod), table_education_mod, CI)
+names(table_education_mod) <- c("Term", "B", "SE", "t", "p", "CI_lower", "CI_upper")
+education_mod_word <- nice_table(table_education_mod,
+           title = c("Table 5", "Effect of Education and Adherence on CDI scores at 18 months"),
+           note = c("* p < .05, ** p < .01, *** p < .001"))
+
+save_as_docx(education_mod_word, path = here("tables", "table_5.docx"))
+```
+

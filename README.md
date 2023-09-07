@@ -6,14 +6,14 @@ Dissertation for MSc Psychological Research Methods with Data Science, Universit
 
 Contents
 
-data
--codebook-trial_data.txt
--trial_data.csv
--codebook-asq_data.txt
--asq_data.csv
+data  
+- codebook-trial_data.txt  
+- trial_data.csv  
+- codebook-asq_data.txt  
+- asq_data.csv  
 
-script
--analysis.rmd
+script  
+- analysis.rmd  
 
-figures
--distribution_vocab
+figures  
+- distribution_vocab  

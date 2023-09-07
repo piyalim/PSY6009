@@ -17,3 +17,5 @@ script
 
 figures  
 - distribution_vocab  
+
+tables
